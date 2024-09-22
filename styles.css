@@ -36,25 +36,25 @@ body, html {
   border: 1px solid white;
   z-index: 1;
   
-  display: flex; /* Flexbox to align content horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  align-items: center; 
 }
 
 .about-photo {
-  flex: 1; /* Make the photo take up 1 part of the available space */
-  width: 200px; /* Adjust the size of the picture */
+  flex: 1; 
+  width: 200px; 
   height: auto;
   border-radius: 10%;
-  margin-right: 50px; /* Space between the image and the text content */
+  margin-right: 50px; 
 }
 
 .about-content {
-  flex: 2; /* Make the text content take up 2 parts of the available space */
-  text-align: center; /* Align the text to the left side */
+  flex: 2; 
+  text-align: center; 
 }
 
 .about-content h1 {
-  margin-top: 0; /* Remove default margin for h1 */
+  margin-top: 0; 
 }
 
 .resume-button {
@@ -83,35 +83,35 @@ body, html {
 }
 
 .project {
-  display: flex; /* Use Flexbox to align content horizontally */
-  align-items: center; /* Vertically center the content */
+  display: flex; 
+  align-items: center; 
   margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.05); /* Slight transparent background */
+  background-color: rgba(255, 255, 255, 0.05); 
   padding: 20px;
   border-radius: 10px;
 }
 
 .project img {
-  flex: 1; /* Take up 1 part of available space */
-  max-width: 250px; /* Limit image width */
+  flex: 1; 
+  max-width: 250px; 
   border-radius: 10px;
-  margin-right: 20px; /* Space between the image and the text */
+  margin-right: 20px; 
   padding: 20px;
 }
 
 .project-content {
-  flex: 2; /* Take up 2 parts of available space */
+  flex: 2; 
   text-align: left;
 }
 
 .project-content h2 {
   margin-top: 0;
-  color: #ff6600; /* Color for project titles */
+  color: #ff6600; 
 }
 
 .project-content p {
   margin-bottom: 15px;
-  color: #fff; /* Set text color */
+  color: #fff; 
   max-width: 95%;
 }
 
@@ -135,4 +135,40 @@ body, html {
 #contact a {
   color: #ff6600;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .about-panel {
+    width: 90%;
+    flex-direction: column; 
+  }
+
+  .about-photo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .project img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%; 
+  }
+
+  .project-content {
+    text-align: center; 
+  }
+
+  #projects {
+    padding: 20px; 
+  }
 }
