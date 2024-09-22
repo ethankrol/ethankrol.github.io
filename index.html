@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Krol - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Full screen height for each section */
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      z-index: 10;
+    }
+
+    #navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    #navbar ul li {
+      margin: 0 15px;
+    }
+
+    #navbar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    #navbar ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    #about {
+      background-color: #f4f4f4;
+    }
+
+    #projects {
+      background-color: #333;
+      color: white;
+    }
+
+    #contact {
+      background-color: #eaeaea;
+    }
+
+    /* Simple resume style */
+    .resume {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button:hover {
+      background-color: #575757;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="resume">
+      <h1>About Me</h1>
+      <p>Hi! I'm Ethan Krol, a software engineer passionate about developing applications that make a difference. With experience in web development, bioinformatics, and autonomous systems, I love tackling complex problems and delivering efficient solutions.</p>
+      <h2>Resume</h2>
+      <p>[Include a downloadable resume link]</p>
+      <a href="path-to-your-resume.pdf" class="button" download>Download My Resume</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div>
+      <h1>Projects</h1>
+      <p>Here are some of the projects I've worked on:</p>
+      <ul>
+        <li><strong>Project 1:</strong> Animal Care Game - A Unity game built to comfort children during medical procedures.</li>
+        <li><strong>Project 2:</strong> Gainesville Crime Heatmap - A crime visualization tool built with Flask and Leaflet.js.</li>
+        <li><strong>Project 3:</strong> Gatorelator - A web app connecting UF students and alumni through common interests.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div>
+      <h1>Contact Me</h1>
+      <p>I'd love to connect! Feel free to reach out via email or LinkedIn:</p>
+      <a href="mailto:your-email@example.com" class="button">Email Me</a>
+      <a href="https://www.linkedin.com/in/your-profile" class="button" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+</body>
+</html>
