@@ -1,0 +1,134 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+  background-color: #000;
+  overflow: auto;
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#stars-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.about-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 15px;
+  border: 1px solid white;
+  z-index: 1;
+  
+  display: flex; /* Flexbox to align content horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.about-photo {
+  flex: 1; /* Make the photo take up 1 part of the available space */
+  width: 200px; /* Adjust the size of the picture */
+  height: auto;
+  border-radius: 10%;
+  margin-right: 50px; /* Space between the image and the text content */
+}
+
+.about-content {
+  flex: 2; /* Make the text content take up 2 parts of the available space */
+  text-align: center; /* Align the text to the left side */
+}
+
+.about-content h1 {
+  margin-top: 0; /* Remove default margin for h1 */
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#projects {
+  padding: 5vw;
+  background-color: #111;
+  width: 90%;
+  height: 100%;
+}
+
+.project h1{
+  text-align: center;
+}
+
+.project {
+  display: flex; /* Use Flexbox to align content horizontally */
+  align-items: center; /* Vertically center the content */
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.05); /* Slight transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project img {
+  flex: 1; /* Take up 1 part of available space */
+  max-width: 250px; /* Limit image width */
+  border-radius: 10px;
+  margin-right: 20px; /* Space between the image and the text */
+  padding: 20px;
+}
+
+.project-content {
+  flex: 2; /* Take up 2 parts of available space */
+  text-align: left;
+}
+
+.project-content h2 {
+  margin-top: 0;
+  color: #ff6600; /* Color for project titles */
+}
+
+.project-content p {
+  margin-bottom: 15px;
+  color: #fff; /* Set text color */
+  max-width: 95%;
+}
+
+.project-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+#contact {
+  background-color: #222;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact a {
+  color: #ff6600;
+  text-decoration: none;
+}

@@ -1,147 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethan Krol - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    /* Full screen height for each section */
-    section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    #navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 10px 0;
-      z-index: 10;
-    }
-
-    #navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    #navbar ul li {
-      margin: 0 15px;
-    }
-
-    #navbar ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      font-weight: bold;
-    }
-
-    #navbar ul li a:hover {
-      background-color: #575757;
-      border-radius: 5px;
-    }
-
-    #about {
-      background-color: #f4f4f4;
-    }
-
-    #projects {
-      background-color: #333;
-      color: white;
-    }
-
-    #contact {
-      background-color: #eaeaea;
-    }
-
-    /* Simple resume style */
-    .resume {
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    h1, h2 {
-      margin: 10px 0;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 20px;
-      background-color: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    a.button:hover {
-      background-color: #575757;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- About Section -->
+    <section class="about">
+        <div id="stars-background"></div> 
 
-  <!-- Navigation Bar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+        <div class="about-panel">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQEMKCzs8R-xyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725201855140?e=1732752000&v=beta&t=pHRRrNIeI7uDMNfEf4uxpQ6Wk6cWkZPhXBdzCQcv30I" alt="Ethan Krol" class="about-photo">
+          
+          <div class="about-content">
+              <h1>Ethan Krol</h1>
+              <p>Hello! I'm Ethan, a Computer Science student at the University of Florida minoring in Astronomy. 
+                I love software development because of its many interdisciplinary applications, and I'm always
+                looking for ways to connect my passions with technology. In my free time, I really enjoy playing
+                 guitar, working out, and basketball. I'm open to any opportunities in software engineering--I'm
+                 always excited to learn new things! 
+              </p>
+              <a href="Latex2026ResumeV1.pdf" target="_blank" class="resume-button">View Resume</a>
+          </div>
+        </div>
+        
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="resume">
-      <h1>About Me</h1>
-      <p>Hi! I'm Ethan Krol, a software engineer passionate about developing applications that make a difference. With experience in web development, bioinformatics, and autonomous systems, I love tackling complex problems and delivering efficient solutions.</p>
-      <h2>Resume</h2>
-      <p>[Include a downloadable resume link]</p>
-      <a href="path-to-your-resume.pdf" class="button" download>Download My Resume</a>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+          <img src="Crime.png" alt="Project Image">
+          <div class="project-content">
+            <h2>Gainesville Crime | JS/HTML/CSS, Flask, SQLite3, Leaflet, Vercel</h2>
+            <p>A highly customizable web application for visualizing crime hotspots in Gainesville on an interactive heat map. 
+              I Architected RESTful APIs with Flask to efficiently query and process a SQLite3 database of 210,000+ crime incidents,
+              processed geographical data points by latitude and longitude to optimize and compare Heapsort and Shellsort algorithms,
+              and integrated a flexible map interface, enabling users to tailor searches by specifying circular area, time frame, and location.</p>
+            <a href="https://gainesville-crime.vercel.app" target="_blank">View Project</a>
+            <a href="https://github.com/Soor1/gainesville-crime" target="_blank" class="github-button">GitHub</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="GatorRelator.png" alt="Project Image">
+          <div class="project-content">
+            <h2>GatorRelator | Firebase, React, Vercel</h2>
+            <p>A React-based networking platform aiming to connect UF students and alumni with common majors, graduation years, campus organizations, and places of employment. 
+              I implemented a direct messaging feature through a Firebase Firestore database, indexed by stored user authentication details. Users can sign in using their email, or with their preexisting Google account.</p>
+            <a href="https://gator-relator.vercel.app/SignIn" target="_blank">View Project</a>
+            <a href="https://github.com/crwfrd/gator-relator-react" target="_blank" class="github-button">GitHub</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="AnimalCare.png" alt="Project Image">
+          <div class="project-content">
+            <h2>Animal Care | Unity, C#, OpenAI ChatGPT 3.5-Turbo API</h2>
+            <p>A 2-D style game leveraging Chat GPT-3.5 Turbo to comfort and educate children waiting to receive medical procedures.
+               I employed prompt engineering to enable context-aware NPCs capable of generating specific dialogue for varying user details, and I also
+              created custom music, sound effects, character sprites, scene transitions, and a tile map for a polished gameplay experience.
+              Animal Care was awarded 2nd place overall at 2023 UF Dream Team Engineering Designathon.</p>
+            <a href="https://www.youtube.com/watch?v=Vmt5MRfRNKI" target="_blank">View Project</a>
+            <a href="https://github.com/hugoliu-code/DesignathonWinners" target="_blank" class="github-button">GitHub</a>
+          </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div>
-      <h1>Projects</h1>
-      <p>Here are some of the projects I've worked on:</p>
-      <ul>
-        <li><strong>Project 1:</strong> Animal Care Game - A Unity game built to comfort children during medical procedures.</li>
-        <li><strong>Project 2:</strong> Gainesville Crime Heatmap - A crime visualization tool built with Flask and Leaflet.js.</li>
-        <li><strong>Project 3:</strong> Gatorelator - A web app connecting UF students and alumni through common interests.</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ethanmkrol@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ethankrol" target="_blank">linkedin.com/in/ethankrol</a></p>
+        <p>GitHub: <a href="https://github.com/ethankrol" target="_blank">github.com/ethankrol</a></p>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div>
-      <h1>Contact Me</h1>
-      <p>I'd love to connect! Feel free to reach out via email or LinkedIn:</p>
-      <a href="mailto:your-email@example.com" class="button">Email Me</a>
-      <a href="https://www.linkedin.com/in/your-profile" class="button" target="_blank">LinkedIn</a>
-    </div>
-  </section>
+    <!-- 3D Stars Background -->
+    <script src="three.min.js"></script>
+    <script>
+        let scene, camera, renderer, stars, starGeo;
 
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+            camera.position.z = 1;
+            camera.rotation.x = Math.PI / 2;
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.getElementById('stars-background').appendChild(renderer.domElement); // Append canvas to background container
+
+            starGeo = new THREE.Geometry();
+            for (let i = 0; i < 10000; i++) {
+                star = new THREE.Vector3(
+                    Math.random() * 600 - 300,
+                    Math.random() * 600 - 300,
+                    Math.random() * 600 - 300
+                );
+                star.velocity = Math.random() * 0.01 + 0.005;
+                star.acceleration = Math.random() * 0.001 + 0.0005;
+                starGeo.vertices.push(star);
+            }
+
+            let sprite = new THREE.TextureLoader().load('star.png');
+            let starMaterial = new THREE.PointsMaterial({
+                color: 0xaaaaaa,
+                size: 0.7,
+                map: sprite
+            });
+
+            stars = new THREE.Points(starGeo, starMaterial);
+            scene.add(stars);
+
+            window.addEventListener("resize", onWindowResize, false);
+
+            animate();
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function animate() {
+            starGeo.vertices.forEach(p => {
+                p.velocity += p.acceleration;
+                p.y -= p.velocity;
+
+                if (p.y < -200) {
+                    p.y = 200;
+                    p.velocity = Math.random() * 0.01 + 0.005;
+                }
+            });
+            starGeo.verticesNeedUpdate = true;
+            stars.rotation.y += 0.0002;
+
+            renderer.render(scene, camera);
+            requestAnimationFrame(animate);
+        }
+
+        init();
+    </script>
 </body>
 </html>
