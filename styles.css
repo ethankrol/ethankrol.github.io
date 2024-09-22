@@ -74,6 +74,10 @@ body, html {
   height: 100%;
 }
 
+#projects h1{
+  text-align: center;
+}
+
 .project h1{
   text-align: center;
 }
